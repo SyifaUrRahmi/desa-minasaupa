@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minasa Upa</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- <style>
+      .info {
+        display: none;
+        margin-top: 10px;
+      }
+    </style> -->
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"> Minasa Upa</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse order-md-0"
+          id="navbarNavAltMarkup"
+        >
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-light" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#profil-pemerintahan"
+                >Profil Pemerintahan</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#profil-desa">Profil Desa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#statistik">Statistik</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#fasilitas-desa"
+                >Fasilitas Desa</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#potensi-desa"
+                >Potensi Desa</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#berita">Berita</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/img/su.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/dua.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/satu.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Jumbotron start -->
+    <!-- <section class="hero" id="home">
+      <main class="content">
+        <h3 class="atas">Selamat Datang di Website</h3>
+        <h3>Desa Minasa Upa</h3>
+      </main>
+    </section> -->
+    <!-- Jumbotron end -->
+    <!-- Profil pemerintah desa start -->
+    <section class="profil-pemerintahan text-center" id="profil-pemerintahan">
+      <br /><br /><br />
+      <h3 class="judul"><b>Profil Pemerintahan</b></h3>
+      <div class="sotk">
+        <p><b>Struktur Organisasi dan Tata Kelola</b></p>
+        <img src="assets/img/sotk.png" alt="sotk" width="800" />
+      </div>
+      <div class="bpd">
+        <p><b>Struktur Organisasi Badan Permusyarawatan Desa</b></p>
+      </div>
+      <div class="pkk"></div>
+      <div class="aparat-pemerintah mt-5">
+        <p><b>Aparat Pemerintah Desa</b></p>
+        <div class="news-container mt-5">
+          <div class="news-item card">
+            <img src="assets/img/img.jpeg" class="card-img-top" alt="..." />
+            <div class="news-content card-body mt-2">
+              <h6 class="card-title">Lorem S.sos</h6>
+              <p class="card-text">Kepala Desa</p>
+            </div>
+          </div>
+          <div class="news-item card">
+            <img src="assets/img/img.jpeg" class="card-img-top" alt="..." />
+            <div class="news-content card-body mt-2">
+              <h6 class="card-title">Lorem S.sos</h6>
+              <p class="card-text">Kepala Desa</p>
+            </div>
+          </div>
+          <div class="news-item card">
+            <img src="assets/img/img.jpeg" class="card-img-top" alt="..." />
+            <div class="news-content card-body mt-2">
+              <h6 class="card-title">Lorem S.sos</h6>
+              <p class="card-text">Kepala Desa</p>
+            </div>
+          </div>
+          <div class="news-item card">
+            <img src="assets/img/cambaya.jpeg" class="card-img-top" alt="..." />
+            <div class="news-content card-body mt-2">
+              <h6 class="card-title">H. Amiruddin</h6>
+              <p class="card-text">Kepala Dusun Cambaya</p>
+            </div>
+          </div>
+          <div class="news-item card">
+            <img src="assets/img/img.jpeg" class="card-img-top" alt="..." />
+            <div class="news-content card-body mt-2">
+              <h6 class="card-title">Lorem S.sos</h6>
+              <p class="card-text">Kepala Desa</p>
+            </div>
+          </div>
+          <div class="news-item card">
+            <img src="assets/img/img.jpeg" class="card-img-top" alt="..." />
+            <div class="news-content card-body mt-2">
+              <h6 class="card-title">Lorem S.sos</h6>
+              <p class="card-text">Kepala Desa</p>
+            </div>
+          </div>
+          <!-- Tambahkan lebih banyak berita sesuai kebutuhan -->
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 180">
+        <path
+          fill="#36C2CEbf"
+          fill-opacity="1"
+          d="M0,160L26.7,149.3C53.3,139,107,117,160,96C213.3,75,267,53,320,53.3C373.3,53,427,75,480,90.7C533.3,107,587,117,640,106.7C693.3,96,747,64,800,69.3C853.3,75,907,117,960,138.7C1013.3,160,1067,160,1120,144C1173.3,128,1227,96,1280,96C1333.3,96,1387,128,1413,144L1440,160L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Profil pemerintah desa end -->
+    <!-- Profil Desa start -->
+    <section class="profil-desa" id="profil-desa">
+      <br /><br /><br />
+      <h3 class="desa text-center text-light"><b>Profil Desa</b></h3>
+      <div class="informasi-umum text-center">
+        <p class="mt-5"><b>Informasi Umum</b></p>
+        <p id="informasi-umum">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
+          quasi. Tenetur nobis sint quo dolore minima labore fuga odio aperiam
+          consequuntur libero quasi, alias ex ut, expedita doloribus nisi fugiat
+          reiciendis est eos laudantium saepe. Suscipit veniam odio sed ipsam
+          pariatur blanditiis voluptates autem, architecto delectus sit nesciunt
+          incidunt excepturi cum nihil cupiditate eveniet minima,
+          necessitatibus, maiores consequuntur! Fuga, voluptatem delectus
+          eligendi quae nulla rem rerum adipisci maiores mollitia dolores
+          exercitationem? Ex aliquam minus voluptatem, quas, tempora dolorum
+          omnis non fuga provident commodi nihil laborum esse sed consequuntur
+          id consequatur, debitis error ad magnam distinctio vel nam? Quod
+          officiis ab facere consequuntur delectus dolor ipsum magni est vero,
+          voluptate eaque culpa maiores ullam deleniti repellat aliquid
+          voluptatem iure molestias! Rem veritatis veniam provident nemo totam,
+          necessitatibus, perferendis earum reiciendis ipsam ipsa culpa! Magni
+          earum corporis beatae, sit ducimus dicta officiis tempore provident
+          numquam atque sint neque, debitis nihil, expedita fuga cupiditate
+          velit inventore ut facilis ipsam. Odit illo, possimus aspernatur
+          officia rerum libero sint ea nam, doloremque repellendus voluptatum
+          voluptate dolor! Eligendi ipsam odit, incidunt culpa aperiam vitae
+          architecto qui velit, iure provident ullam dicta saepe illum.
+          Suscipit, necessitatibus, iusto hic, dicta corrupti beatae nisi
+          veritatis optio aperiam facilis sed?
+        </p>
+      </div>
+      <div class="sejarah text-center">
+        <p class="mt-5"><b>Sejarah</b></p>
+        <p id="sejarah">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
+          quasi. Tenetur nobis sint quo dolore minima labore fuga odio aperiam
+          consequuntur libero quasi, alias ex ut, expedita doloribus nisi fugiat
+          reiciendis est eos laudantium saepe. Suscipit veniam odio sed ipsam
+          pariatur blanditiis voluptates autem, architecto delectus sit nesciunt
+          incidunt excepturi cum nihil cupiditate eveniet minima,
+          necessitatibus, maiores consequuntur! Fuga, voluptatem delectus
+          eligendi quae nulla rem rerum adipisci maiores mollitia dolores
+          exercitationem? Ex aliquam minus voluptatem, quas, tempora dolorum
+          omnis non fuga provident commodi nihil laborum esse sed consequuntur
+          id consequatur, debitis error ad magnam distinctio vel nam? Quod
+          officiis ab facere consequuntur delectus dolor ipsum magni est vero,
+          voluptate eaque culpa maiores ullam deleniti repellat aliquid
+          voluptatem iure molestias! Rem veritatis veniam provident nemo totam,
+          necessitatibus, perferendis earum reiciendis ipsam ipsa culpa! Magni
+          earum corporis beatae, sit ducimus dicta officiis tempore provident
+          numquam atque sint neque, debitis nihil, expedita fuga cupiditate
+          velit inventore ut facilis ipsam. Odit illo, possimus aspernatur
+          officia rerum libero sint ea nam, doloremque repellendus voluptatum
+          voluptate dolor! Eligendi ipsam odit, incidunt culpa aperiam vitae
+          architecto qui velit, iure provident ullam dicta saepe illum.
+          Suscipit, necessitatibus, iusto hic, dicta corrupti beatae nisi
+          veritatis optio aperiam facilis sed?
+        </p>
+      </div>
+      <div class="visi-misi">
+        <p class="mt-5 text-center"><b>Visi Misi</b></p>
+        <div id="visi-misi">
+          <div class="text-center">
+            <b class="mt-3">
+              TERWUJUDNYA MASYARAKAT DESA YANG RELIGIUS, SEJAHTERA, MAJU, DAN
+              MANDIRI</b
+            >
+            <p class="m-5">
+              Dalam meraih visi Desa Minasa Upa di atas dengan mempertimbangkan
+              potensi dan hambatan baik internal maupun eksternal, maka
+              disusunlah Misi Desa Minasa Upa diantaranya:
+            </p>
+          </div>
+
+          <li>Peningkatan Pelayanan Bagi Masyarakat.</li>
+          <li>Peningkatan Insfrastruktur Desa.</li>
+          <li>Pembinaan Masyarakat Yang Lebih Religius.</li>
+          <li>
+            Meningkatkan Kecerdasan Masyarakat Melalui Penyediaan Fasilitasi
+            Pendidikan Yang Lebih Baik.
+          </li>
+          <li>
+            Meningkatkan Keterampilan Masyarakat Melalui Pelatihan-Pelatihan.
+          </li>
+          <li>
+            Penyediaan Bantuan Modal Bagi Pelaku Wirausaha Petani dan Nelayan.
+          </li>
+          <li>Pembangunan Sarana Olahraga (Sorga Desa).</li>
+          <li>Penyediaan Wadah Penampungan Air Bersih Setiap Rumah.</li>
+          <li>
+            Peningkatan Kesejahteraan Bagi Guru Mengaji, Imam Mesjid, Guru
+            PALID, dan Kader Posyandu.
+          </li>
+          <li>
+            Bimbingan Belajar Gratis (Bahasa Ingris, Bahasa Arab, Kursus
+            Komputer, dan Kursus Menjahit).
+          </li>
+        </div>
+      </div>
+      <!-- <section id="peta-lokasi" class="container">
+        <p class="mt-5 text-center"><b>Peta Lokasi</b></p>
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-5 col-sm-10 peta">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31801.4629594578!2d119.54244972318513!3d-4.909044425489184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbe50d14b222489%3A0xfa4ceb2df9d3d6f1!2sMinasupa%2C%20Kec.%20Bontoa%2C%20Kabupaten%20Maros%2C%20Sulawesi%20Selatan!5e0!3m2!1sid!2sid!4v1722528112557!5m2!1sid!2sid"
+              width="500"
+              height="480"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              class="rounded"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="col-md-5 col-sm-10 bg-light rounded p-3 isi">
+            <p>
+              <b>Desa Minasa Upa</b>
+            </p>
+            <hr />
+            <p class="teks-judul">Batas Desa</p>
+            <p>Sebelah Utara: Kabupaten Pangkep</p>
+            <p>Sebelah Selatan: Desa Tunikamaseang</p>
+            <p>Sebelah Barat: Desa Topabiring dan Ampekale</p>
+            <p>Sebelah Timur: Desa Salenrang dan Boto Lempangan</p>
+            <hr />
+            <p class="teks-judul">Luas Desa</p>
+            <p>811,86 Ha</p>
+            <hr />
+            <p class="teks-judul">Jumlah Penduduk</p>
+            <p>3.118 Jiwa</p>
+          </div>
+        </div>
+      </section> -->
+      <section id="peta-lokasi" class="peta-lokasi">
+        <p class="mt-5 text-center"><b>Peta Lokasi</b></p>
+        <div class="rows rounded">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31801.4629594578!2d119.54244972318513!3d-4.909044425489184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbe50d14b222489%3A0xfa4ceb2df9d3d6f1!2sMinasupa%2C%20Kec.%20Bontoa%2C%20Kabupaten%20Maros%2C%20Sulawesi%20Selatan!5e0!3m2!1sid!2sid!4v1722528112557!5m2!1sid!2sid"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="map"
+          ></iframe>
+          <!-- <form action="" onsubmit="sendEmail(); reset(); return false;"> -->
+          <!-- <form onsubmit="reset()"> -->
+          <div class="data">
+            <p>
+              <b>Desa Minasa Upa</b>
+            </p>
+            <hr />
+            <p class="teks-judul">Batas Desa</p>
+            <p>Sebelah Utara: Kabupaten Pangkep</p>
+            <p>Sebelah Selatan: Desa Tunikamaseang</p>
+            <p>Sebelah Barat: Desa Topabiring dan Ampekale</p>
+            <p>Sebelah Timur: Desa Salenrang dan Boto Lempangan</p>
+            <hr />
+            <p class="teks-judul">Luas Desa</p>
+            <p>811,86 Ha</p>
+            <hr />
+            <p class="teks-judul">Jumlah Penduduk</p>
+            <p>3.118 Jiwa</p>
+          </div>
+        </div>
+      </section>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,96L24,117.3C48,139,96,181,144,176C192,171,240,117,288,128C336,139,384,213,432,250.7C480,288,528,288,576,261.3C624,235,672,181,720,186.7C768,192,816,256,864,261.3C912,267,960,213,1008,213.3C1056,213,1104,267,1152,256C1200,245,1248,171,1296,133.3C1344,96,1392,96,1416,96L1440,96L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Profil Desa end -->
+    <!-- Statistik Start -->
+    <section class="statistik text-center" id="statistik">
+      <br /><br /><br />
+      <h3 class="judul"><b>Statistik</b></h3>
+      <div class="sotk">
+        <p><b>Data Penduduk Berdasarkan Umur dan Jenis Kelamin</b></p>
+        <canvas id="populationPyramid"></canvas>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 180">
+        <path
+          fill="#36C2CEbf"
+          fill-opacity="1"
+          d="M0,160L26.7,149.3C53.3,139,107,117,160,96C213.3,75,267,53,320,53.3C373.3,53,427,75,480,90.7C533.3,107,587,117,640,106.7C693.3,96,747,64,800,69.3C853.3,75,907,117,960,138.7C1013.3,160,1067,160,1120,144C1173.3,128,1227,96,1280,96C1333.3,96,1387,128,1413,144L1440,160L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Statistik End -->
+    <!-- Fasilitas start -->
+    <section id="fasilitas-desa" class="fasilitas-desa">
+      <br /><br /><br />
+      <div class="container">
+        <h3 class="text-light text-center"><b>Fasilitas Desa</b></h3>
+        <div
+          class="row d-flex mt-5 justify-content-center align-center"
+          id="sub"
+        >
+          <div class="col button-container text-center">
+            <button
+              onclick="showInfo('info1')"
+              class="bg-light rounded px-5 py-2 text-center"
+            >
+              Pendidikan
+            </button>
+            <!-- <div id="info1" class="info">
+              <p>Ini adalah informasi pertama.</p>
+            </div> -->
+          </div>
+          <div class="col button-container text-center">
+            <button
+              onclick="showInfo('info2')"
+              class="bg-light rounded px-5 py-2 text-center"
+            >
+              Kesehatan
+            </button>
+            <!-- <div id="info2" class="info">
+              <p>Ini adalah informasi kedua</p>
+            </div> -->
+          </div>
+          <div class="col button-container text-center">
+            <button
+              onclick="showInfo('info3')"
+              class="bg-light rounded px-5 py-2 text-center"
+            >
+              Infrastruktur
+            </button>
+            <!-- <div id="info3" class="info">
+              <p>Ini adalah informasi ketiga.</p>
+            </div> -->
+          </div>
+          <div class="col button-container text-center">
+            <button
+              onclick="showInfo('info4')"
+              class="bg-light rounded px-5 py-2 text-center"
+            >
+              Keamanan
+            </button>
+            <!-- <div id="info4" class="info">
+              <p>Ini adalah informasi keempat.</p>
+            </div> -->
+          </div>
+        </div>
+        <div
+          class="info-container mt-5 bg-light p-5 rounded"
+          id="infoContainer"
+          height="100"
+        >
+          <div class="infoText">
+            <b>Daftar sekolah</b>
+
+            <li>KB Al-Ashar, Dusun Buamata</li>
+            <li>KB Belaian Kasih, Dusun Sikapaya</li>
+            <li>KB Cemara, Dusun Pappaka</li>
+            <li>KB Seruni Minasa Upa, Dusun Cambaya</li>
+            <li>SMP Islam An-Nas 3 Sikapaya Bontoa, Dusun Sikapaya</li>
+            <li>SMP Islam Terpadu Hanawa, Dusun Cambaya</li>
+            <li>UPTD SD Negeri 229 Inpres Cambaya, Cambaya</li>
+            <li>UPTD SD Negeri 45 Pappaka, Dusun Pappaka</li>
+            <li>UPTD SD Negeri 69 Sikapaya, Dusun Sikapaya</li>
+
+            <br />
+            <p class="teks-judul"><b>Total: 9</b></p>
+          </div>
+          <!-- Informasi akan muncul di sini -->
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,96L24,117.3C48,139,96,181,144,176C192,171,240,117,288,128C336,139,384,213,432,250.7C480,288,528,288,576,261.3C624,235,672,181,720,186.7C768,192,816,256,864,261.3C912,267,960,213,1008,213.3C1056,213,1104,267,1152,256C1200,245,1248,171,1296,133.3C1344,96,1392,96,1416,96L1440,96L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Fasilitas end -->
+    <!-- Potensi desa start -->
+    <section class="potensi-desa" id="potensi-desa">
+      <br /><br /><br />
+      <h3 class="text-center judul"><b>Potensi Desa</b></h3>
+      <div
+        class="container row d-flex justify-content-center align-center mt-5"
+      >
+        <div class="col-md-6 col-sm-10 bg-light mx-auto p-5">
+          <p><b>Produk desa </b></p>
+          <li>Amplang Sikapaya (jenis kerupuk)</li>
+          <li>Cucuru Te'ne</li>
+          <li>Kue nastar</li>
+          <li>Baruasa (jenis kue kering)</li>
+          <li>Abon ikan bandeng</li>
+          <li>Keripik ikan mujair Jabiro'</li>
+          <li>Kue kurma</li>
+          <li>Baruasa kambu</li>
+          <li>Putu kacang</li>
+        </div>
+        <div class="col-md-4 col-sm-10 bg-light rounded p-5">
+          <p>
+            <b>Objek Wisata</b>
+          </p>
+          <li>Dermaga Hijau</li>
+          <li>Wisata Sungai Ujung</li>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 180">
+        <path
+          fill="#36C2CEbf"
+          fill-opacity="1"
+          d="M0,160L26.7,149.3C53.3,139,107,117,160,96C213.3,75,267,53,320,53.3C373.3,53,427,75,480,90.7C533.3,107,587,117,640,106.7C693.3,96,747,64,800,69.3C853.3,75,907,117,960,138.7C1013.3,160,1067,160,1120,144C1173.3,128,1227,96,1280,96C1333.3,96,1387,128,1413,144L1440,160L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Potensi desa end -->
+    <!-- Berita Start -->
+    <section class="berita" id="berita">
+      <div class="">
+        <h3 class="fw-bold text-center mb-4 text-light">Berita Terbaru</h3>
+        <div class="news-container mt-5">
+          <div class="news-item card">
+            <img src="assets/img/mu.jpg" class="card-img-top" alt="berita" />
+            <div class="news-content card-body">
+              <h6 class="card-title">Judul Berita</h6>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                tempora consequatur amet deleniti! Possimus perferendis nihil
+                quia tempore veritatis nam?
+              </p>
+              <p class="date align-right"><b>04 Agustus 2024</b></p>
+            </div>
+          </div>
+          <div class="news-item card">
+            <img src="assets/img/mu.jpg" class="card-img-top" alt="berita" />
+            <div class="news-content card-body">
+              <h6 class="card-title">Judul Berita</h6>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                tempora consequatur amet deleniti! Possimus perferendis nihil
+                quia tempore veritatis nam?
+              </p>
+              <p class="date align-right"><b>04 Agustus 2024</b></p>
+            </div>
+          </div>
+          <div class="news-item card">
+            <img src="assets/img/mu.jpg" class="card-img-top" alt="berita" />
+            <div class="news-content card-body">
+              <h6 class="card-title">Judul Berita</h6>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                tempora consequatur amet deleniti! Possimus perferendis nihil
+                quia tempore veritatis nam?
+              </p>
+              <p class="date align-right"><b>04 Agustus 2024</b></p>
+            </div>
+          </div>
+          <div class="news-item card">
+            <img src="assets/img/mu.jpg" class="card-img-top" alt="berita" />
+            <div class="news-content card-body">
+              <h6 class="card-title">Judul Berita</h6>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                tempora consequatur amet deleniti! Possimus perferendis nihil
+                quia tempore veritatis nam?
+              </p>
+              <p class="date align-right"><b>04 Agustus 2024</b></p>
+            </div>
+          </div>
+          <div class="news-item card">
+            <img src="assets/img/mu.jpg" class="card-img-top" alt="berita" />
+            <div class="news-content card-body">
+              <h6 class="card-title">Judul Berita</h6>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                tempora consequatur amet deleniti! Possimus perferendis nihil
+                quia tempore veritatis nam?
+              </p>
+              <p class="date align-right"><b>04 Agustus 2024</b></p>
+            </div>
+          </div>
+          <!-- Tambahkan lebih banyak berita sesuai kebutuhan -->
+        </div>
+      </div>
+      <br /><br />
+    </section>
+    <!-- Berita end -->
+    <!-- Footer start -->
+    <footer>
+      <div class="socials">
+        <a href="https://www.instagram.com/syifaurrahmi_amir/"
+          ><i data-feather="instagram"></i
+        ></a>
+        <a href="mailto:sifasisi3@gmail.com"><i data-feather="mail"></i></a>
+        <a href="wa.me/082350687677"><i data-feather="phone"></i></a>
+      </div>
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#profil-pemerintahan">Profil Pemerintahan</a>
+        <a href="#profil-desa">Profil Desa</a>
+        <a href="#statistik">Statistik</a>
+        <a href="#fasilitas-desa">Fasilitas Desa</a>
+        <a href="#potensi-desa">Potensi Desa</a>
+        <a href="#wisata">Berita</a>
+      </div>
+      <div class="credit">
+        <p>
+          Created By <br />
+          <a href="">KKNT Infrastruktur Unhas Gelombang 112</a>. | &copy; 2024
+        </p>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function showInfo(infoId) {
+        var infoContainer = document.getElementById("infoContainer");
+        var infoText = document.getElementsByClassName("infoText");
+
+        if (infoId === "info1") {
+          infoText =
+            "<b>Daftar sekolah</b> <li>KB Al-Ashar, Dusun Buamata</li> <li>KB Belaian Kasih, Dusun Sikapaya</li> <li>KB Cemara, Dusun Pappaka</li> <li>KB Seruni Minasa Upa, Dusun Cambaya</li> <li>SMP Islam An-Nas 3 Sikapaya Bontoa, Dusun Sikapaya</li> <li>SMP Islam Terpadu Hanawa, Dusun Cambaya</li> <li>UPTD SD Negeri 229 Inpres Cambaya, Cambaya</li> <li>UPTD SD Negeri 45 Pappaka, Dusun Pappaka</li> <li>UPTD SD Negeri 69 Sikapaya, Dusun Sikapaya</li> <br /> <p class='teks-judul'><b>Total: 9</p>";
+        } else if (infoId === "info2") {
+          infoText =
+            "<b>Sarana</b><li>2014: 1 buah Pustu & 5 buah Posyandu</li><li>2015: 5 buah Posyandu</li><li>2016: 5 buah Posyandu</li><li>2017: 5 buah Posyandu</li><li>2018: 5 buah Posyandu</li><li>2019: 5 buah Posyandu</li><li>2020: 5 buah Posyandu</li><li>2021: 5 buah Posyandu</li><li>2022: 5 buah Posyandu</li><li>2023: 5 buah Posyandu</li><li>2024: 5 buah Posyandu</li>";
+        } else if (infoId === "info3") {
+          infoText =
+            "<li>Jalan Perintis</li><li>Kantor Desa Minasa Upa</li><li>Dermaga Sungai Ujung</li><li>Gudang BUMDes Desa Minasa Upa</li><li>Kantor Pemberdayaan Kesejahteraan Keluarga (PKK) Desa Minasa Upa</li>";
+        } else if (infoId === "info4") {
+          infoText =
+            "<b>Fasilitas</b><li>2014: 2 buah pos ronda</li><li>2015: 2 buah pos ronda</li><li>2016: 3 buah pos ronda</li><li>2017: 3 buah pos ronda</li><li>2018: 3 buah pos ronda</li><li>2019: 3 buah pos ronda</li><li>2020: 3 buah pos ronda</li><li>2021: 3 buah pos ronda</li> <li>2022: 3 buah pos ronda</li><li>2023: 3 buah pos ronda</li><li>2024: 3 buah pos ronda</li>";
+        }
+
+        infoContainer.innerHTML = infoText;
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/script.js"></script>
+  </body>
+</html>
