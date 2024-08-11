@@ -99,6 +99,7 @@ ul li a,
   /* height: auto; Untuk menjaga aspek rasio */
   max-height: 200px; /* Atur tinggi maksimum gambar */
   object-fit: cover; /* Menjaga gambar tetap berproporsi */
+  background-color: #6c757d88;
 }
 .news-content {
   padding: 10px;
@@ -278,10 +279,109 @@ footer .credit a {
     padding: 0;
     margin: 0;
   }
+  .peta-lokasi .rows {
+    flex-wrap: wrap;
+  }
+
+  .peta-lokasi .rows .map {
+    height: 30rem;
+  }
+
+  .peta-lokasi .rows .data {
+    padding-top: 0;
+  }
+  .data p b {
+    margin-top: 20px;
+  }
+  .timeline:before {
+    left: 90px;
+  }
+  .timeline > li {
+    margin-bottom: 70px;
+  }
+  .timeline > li .timeline-panel {
+    width: calc(100% - 120px);
+    left: 20px !important;
+  }
+  .timeline > li .timeline-badge {
+    left: 20px;
+    margin-left: 0;
+  }
+  .timeline {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+.active-button {
+  background-color: #36c2ce;
+  color: white;
 }
 /* Mobile Phone */
 @media (max-width: 450px) {
   html {
     font-size: 55%;
   }
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  margin-left: 7rem;
+  margin-right: 7rem;
+}
+.timeline:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #ddd;
+  left: 50%;
+  margin-left: -2px;
+}
+.timeline > li {
+  margin-bottom: 50px;
+  position: relative;
+}
+.timeline-badge {
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  /* font-size: 1rem; */
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background-color: #6c757d;
+  margin-left: -25px;
+  border-radius: 50%;
+  z-index: 100;
+}
+.timeline-panel {
+  position: relative;
+  width: 46%;
+  padding: 20px;
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+.timeline > li:nth-child(odd) .timeline-panel {
+  left: 0;
+}
+.timeline > li:nth-child(even) .timeline-panel {
+  left: 54%;
+}
+.timeline-heading h4 {
+  margin-top: 0;
+  color: #333;
+}
+.timeline-body p {
+  margin-bottom: 0;
+  color: #555;
+}
+@media (max-width: 767px) {
 }
