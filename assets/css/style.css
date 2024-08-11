@@ -226,6 +226,14 @@ footer .credit a {
   padding: 1rem 1rem;
 }
 
+.carousel-caption {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 /* Laptop */
 @media (max-width: 1366px) {
   html {
@@ -235,10 +243,16 @@ footer .credit a {
 /* Tablet */
 @media (max-width: 768px) {
   html {
-    font-size: 62.5%;
+    font-size: 60%;
+  }
+
+  .carousel-caption {
+    justify-content: center;
+    width: 80%;
+    font-size: initial;
   }
   .sotk img {
-    width: 60%;
+    width: 80%;
   }
   .news-container {
     max-height: 200px;
@@ -311,6 +325,25 @@ footer .credit a {
     margin-left: 1rem;
     margin-right: 1rem;
   }
+  .timeline-title {
+    margin-top: 30px;
+  }
+  #informasi-umum,
+  #sejarah-desa {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  #sejarah-desa ul {
+    width: 100%;
+  }
+  #sejarah-desa .container {
+    justify-content: center;
+    text-align: justify;
+    margin-left: 0 !important;
+  }
+  ul .timeline {
+    margin: 0 !important;
+  }
 }
 
 .active-button {
@@ -320,7 +353,7 @@ footer .credit a {
 /* Mobile Phone */
 @media (max-width: 450px) {
   html {
-    font-size: 55%;
+    /* font-size: 55%; */
   }
 }
 
