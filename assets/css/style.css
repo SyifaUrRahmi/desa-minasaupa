@@ -239,6 +239,65 @@ footer .credit a {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+.timeline {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  margin-left: 7rem;
+  margin-right: 7rem;
+}
+.timeline:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #ddd;
+  left: 50%;
+  margin-left: -2px;
+}
+.timeline > li {
+  margin-bottom: 50px;
+  position: relative;
+}
+.timeline-badge {
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  /* font-size: 1rem; */
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background-color: #6c757d;
+  margin-left: -25px;
+  border-radius: 50%;
+  z-index: 100;
+}
+.timeline-panel {
+  position: relative;
+  width: 46%;
+  padding: 20px;
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+.timeline > li:nth-child(odd) .timeline-panel {
+  left: 0;
+}
+.timeline > li:nth-child(even) .timeline-panel {
+  left: 54%;
+}
+.timeline-heading h4 {
+  margin-top: 0;
+  color: #333;
+}
+.timeline-body p {
+  margin-bottom: 0;
+  color: #555;
+}
 
 /* Laptop */
 @media (max-width: 1366px) {
@@ -319,29 +378,56 @@ footer .credit a {
   .data p b {
     margin-top: 20px;
   }
-  .timeline:before {
-    /* left: 90px; */
-  }
-  .timeline > li {
-    margin-bottom: 70px;
-  }
-  .timeline > li .timeline-panel {
-    width: calc(100% - 120px);
-    left: 20px !important;
-  }
-  .timeline > li .timeline-badge {
-    left: 20px;
-    margin-left: 0;
-  }
   .timeline {
     margin-left: 1rem;
     margin-right: 1rem;
   }
+
+  .timeline:before {
+    /* left: 5%; */
+  }
+
+  .timeline-badge {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    /* margin-left: -20px; */
+  }
+
+  .timeline-panel {
+    width: 100%;
+    padding: 15px;
+    /* margin-left: 20px; */
+    /* left: 10%; */
+  }
+
+  .timeline > li:nth-child(even) .timeline-panel {
+    left: 0.1%;
+    justify-content: center;
+  }
+
+  .timeline > li:nth-child(odd) .timeline-panel {
+    left: -9%;
+  }
+
+  .timeline-heading h4 {
+    font-size: 1rem;
+  }
+
+  .timeline-body p {
+    font-size: 0.9rem;
+  }
+
   .timeline-title {
     margin-top: 40px;
   }
+
+  #sejarah-desa .container {
+    justify-content: center;
+  }
   #informasi-umum,
-  #sejarah-desa {
+  #sejarah-desa,
+  #visi-misi {
     margin-left: 5rem;
     margin-right: 5rem;
   }
@@ -364,9 +450,24 @@ footer .credit a {
   }
   .sub {
     flex-wrap: wrap;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding: 0;
   }
+  .peta-lokasi .rows {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  /* .peta-lokasi .rows .map {
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+  }
+  .peta-lokasi .rows .data {
+    flex: 1 1 45rem;
+    padding: 1rem 1rem;
+  } */
 }
 
 .active-button {
@@ -384,69 +485,10 @@ footer .credit a {
     width: 0;
   }
   .piramid {
-    margin-top: -250px;
+    margin-top: -200px;
     display: inline;
   }
 }
 
-.timeline {
-  list-style: none;
-  padding: 0;
-  position: relative;
-  margin-left: 7rem;
-  margin-right: 7rem;
-}
-.timeline:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 4px;
-  background: #ddd;
-  left: 50%;
-  margin-left: -2px;
-}
-.timeline > li {
-  margin-bottom: 50px;
-  position: relative;
-}
-.timeline-badge {
-  color: #fff;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  /* font-size: 1rem; */
-  text-align: center;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  background-color: #6c757d;
-  margin-left: -25px;
-  border-radius: 50%;
-  z-index: 100;
-}
-.timeline-panel {
-  position: relative;
-  width: 46%;
-  padding: 20px;
-  background: #f8f9fa;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
-}
-.timeline > li:nth-child(odd) .timeline-panel {
-  left: 0;
-}
-.timeline > li:nth-child(even) .timeline-panel {
-  left: 54%;
-}
-.timeline-heading h4 {
-  margin-top: 0;
-  color: #333;
-}
-.timeline-body p {
-  margin-bottom: 0;
-  color: #555;
-}
 @media (max-width: 767px) {
 }
