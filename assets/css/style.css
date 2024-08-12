@@ -5,6 +5,12 @@ body {
 :root {
   --primary: #36c1ceb8;
 }
+.piramid {
+  display: none;
+}
+canvas {
+  display: inline;
+}
 .carousel-item img {
   height: 100vh;
   object-fit: cover;
@@ -249,7 +255,13 @@ footer .credit a {
   .carousel-caption {
     justify-content: center;
     width: 80%;
-    font-size: initial;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .carousel-caption h2 {
+    /* width: 80%; */
+    font-size: 25px;
+    font-weight: bold;
   }
   .sotk img {
     width: 80%;
@@ -308,7 +320,7 @@ footer .credit a {
     margin-top: 20px;
   }
   .timeline:before {
-    left: 90px;
+    /* left: 90px; */
   }
   .timeline > li {
     margin-bottom: 70px;
@@ -326,7 +338,7 @@ footer .credit a {
     margin-right: 1rem;
   }
   .timeline-title {
-    margin-top: 30px;
+    margin-top: 40px;
   }
   #informasi-umum,
   #sejarah-desa {
@@ -338,7 +350,7 @@ footer .credit a {
   }
   #sejarah-desa .container {
     justify-content: center;
-    text-align: justify;
+    /* text-align: justify; */
     margin-left: 0 !important;
   }
   ul .timeline {
@@ -354,6 +366,15 @@ footer .credit a {
 @media (max-width: 450px) {
   html {
     /* font-size: 55%; */
+  }
+  #populationPyramid {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+  }
+  .piramid {
+    margin-top: -250px;
+    display: inline;
   }
 }
 
