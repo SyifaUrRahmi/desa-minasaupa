@@ -326,19 +326,20 @@ footer .credit a {
     width: 80%;
   }
   .news-container {
-    max-height: 200px;
+    height: 270px;
     margin-left: 5rem;
     margin-right: 5rem;
   }
 
   .news-item {
     margin-right: 10px;
-    max-width: 200px; /* Atur lebar maksimum card */
+    width: 200px; /* Atur lebar maksimum card */
+    height: 250px;
   }
   .news-item img {
-    width: 800; /* Agar gambar sesuai lebar card */
-    /* height: auto; Untuk menjaga aspek rasio */
-    max-height: 100px; /* Atur tinggi maksimum gambar */
+    width: 200px; /* Agar gambar sesuai lebar card */
+    /* height: auto; */
+    height: 250px;
     object-fit: cover; /* Menjaga gambar tetap berproporsi */
   }
   .peta {
