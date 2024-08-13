@@ -16,6 +16,15 @@ canvas {
   object-fit: cover;
 }
 
+.btn-jelajah:hover {
+  background-color: #36c2ce;
+  color: #ffffff;
+}
+.btn-jelajah {
+  background-color: #ffffff;
+  color: #000000;
+}
+
 .hero {
   min-height: 100vh;
   display: flex;
@@ -91,7 +100,8 @@ ul li a,
   margin-right: 10rem;
 }
 
-.news-container a {
+.news-container a,
+.btn-jelajah a {
   text-decoration: none; /* Menghilangkan garis bawah */
   color: inherit;
 }
@@ -307,7 +317,8 @@ footer .credit a {
 }
 /* Tablet */
 @media (max-width: 768px) {
-  html {
+  html,
+  .btn-jelajah {
     font-size: 60%;
   }
 
