@@ -113,3 +113,25 @@ const populationPyramid = new Chart(ctx, {
     },
   },
 });
+
+// Modal
+const itemDetailModal1 = document.querySelector("#item-detail-modal-1");
+const itemDetailButton1 = document.querySelector(".berita-1");
+
+itemDetailButton1.onclick = (e) => {
+  itemDetailModal1.style.display = "flex";
+  e.preventDefault();
+};
+
+// klik tombol close modal
+document.querySelector(".modal .close-icon-1").onclick = (e) => {
+  itemDetailModal1.style.display = "none";
+  e.preventDefault();
+};
+
+// klik di luar modal
+window.onclick = (e) => {
+  if (e.target === itemDetailModal1) {
+    itemDetailModal1.style.display = "none";
+  }
+};
