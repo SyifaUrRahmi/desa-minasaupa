@@ -548,7 +548,7 @@ footer .credit a {
     width: 0;
   }
   .piramid {
-    margin-top: -200px;
+    /* margin-top: -200px; */
     display: inline;
   }
 
