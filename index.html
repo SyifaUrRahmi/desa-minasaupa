@@ -614,40 +614,41 @@
       <br /><br /><br />
       <div class="container">
         <h3 class="text-light text-center"><b>Fasilitas Desa</b></h3>
-        <div class="row mt-5 justify-content-center align-center" id="sub">
-          <div class="col-md-3 col-sm-6 button-container text-center">
+        <div class="button-wrapper mt-5">
+          <div class="button-container">
             <button
               onclick="showInfo('info1')"
-              class="rounded px-5 py-2 text-center active-button"
+              class="custom-button active-button text-center"
             >
               Pendidikan
             </button>
           </div>
-          <div class="col-md-3 col-sm-6 button-container text-center">
+          <div class="button-container">
             <button
               onclick="showInfo('info2')"
-              class="rounded px-5 py-2 text-center"
+              class="custom-button text-center"
             >
               Kesehatan
             </button>
           </div>
-          <div class="col-md-3 col-sm-6 button-container text-center">
+          <div class="button-container">
             <button
               onclick="showInfo('info3')"
-              class="rounded px-5 py-2 text-center"
+              class="custom-button text-center"
             >
               Infrastruktur
             </button>
           </div>
-          <div class="col-md-3 col-sm-6 button-container text-center">
+          <div class="button-container">
             <button
               onclick="showInfo('info4')"
-              class="rounded px-5 py-2 text-center"
+              class="custom-button text-center"
             >
               Keamanan
             </button>
           </div>
         </div>
+
         <div
           class="info-container mt-5 bg-light p-5 rounded"
           id="infoContainer"
@@ -685,29 +686,30 @@
     <section class="potensi-desa" id="potensi-desa">
       <br /><br /><br />
       <h3 class="text-center judul"><b>Potensi Desa</b></h3>
-      <div
-        class="container row d-flex justify-content-center align-center mt-5"
-      >
-        <div class="col-md-6 col-sm-10 bg-light mx-auto p-5">
-          <p><b>Produk desa </b></p>
-          <li>Amplang Sikapaya (jenis kerupuk)</li>
-          <li>Cucuru Te'ne</li>
-          <li>Kue nastar</li>
-          <li>Baruasa (jenis kue kering)</li>
-          <li>Abon ikan bandeng</li>
-          <li>Keripik ikan mujair Jabiro'</li>
-          <li>Kue kurma</li>
-          <li>Baruasa kambu</li>
-          <li>Putu kacang</li>
+      <div class="custom-container" id="potensi">
+        <div class="custom-box bg-light">
+          <p><b>Produk Desa</b></p>
+          <ul>
+            <li>Amplang Sikapaya (jenis kerupuk)</li>
+            <li>Cucuru Te'ne</li>
+            <li>Kue nastar</li>
+            <li>Baruasa (jenis kue kering)</li>
+            <li>Abon ikan bandeng</li>
+            <li>Keripik ikan mujair Jabiro'</li>
+            <li>Kue kurma</li>
+            <li>Baruasa kambu</li>
+            <li>Putu kacang</li>
+          </ul>
         </div>
-        <div class="col-md-4 col-sm-10 bg-light rounded p-5">
-          <p>
-            <b>Objek Wisata</b>
-          </p>
-          <li>Dermaga Hijau</li>
-          <li>Wisata Sungai Ujung</li>
+        <div class="custom-box bg-light rounded">
+          <p><b>Objek Wisata</b></p>
+          <ul>
+            <li>Dermaga Hijau</li>
+            <li>Wisata Sungai Ujung</li>
+          </ul>
         </div>
       </div>
+
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 180">
         <path
           fill="#36C2CEbf"

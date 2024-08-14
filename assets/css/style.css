@@ -360,6 +360,47 @@ footer .credit a {
   color: #555;
 }
 
+.button-wrapper {
+  margin-left: 9rem;
+  margin-right: 9rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Jarak antar tombol */
+}
+
+.button-container {
+  flex: 1 1 calc(25% - 20px); /* Untuk layar besar, 4 tombol sejajar */
+  text-align: center;
+}
+
+.custom-button {
+  /* padding: 10px 30px; */
+  padding: 10px;
+  border-radius: 10px;
+  width: 80%;
+}
+.custom-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.custom-box {
+  flex: 1 1 45%; /* Mengambil sekitar 45% dari lebar container */
+  margin: 10px;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+}
+
+#potensi {
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
 /* Laptop */
 @media (max-width: 1366px) {
   html {
@@ -373,6 +414,17 @@ footer .credit a {
     font-size: 60%;
   }
 
+  #potensi {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .custom-box {
+    flex: 1 1 100%; /* Pada layar kecil, mengambil seluruh lebar container */
+  }
+  .button-container {
+    flex: 1 1 calc(50% - 20px); /* Untuk layar kecil, 2 tombol sejajar */
+  }
   .carousel-caption {
     justify-content: center;
     width: 80%;
