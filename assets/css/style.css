@@ -550,6 +550,9 @@ footer .credit a {
   .piramid {
     margin-top: -100px;
     display: inline;
+  }
+
+  #sub {
     margin-left: 0;
     margin-bottom: 0;
   }
@@ -557,6 +560,10 @@ footer .credit a {
   .gambar img {
     width: 80%;
     height: auto;
+  }
+
+  .sotk p {
+    margin-bottom: 50px;
   }
 }
 
