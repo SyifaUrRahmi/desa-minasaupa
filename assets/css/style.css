@@ -548,8 +548,10 @@ footer .credit a {
     width: 0;
   }
   .piramid {
-    margin-top: -150px;
+    margin-top: -100px;
     display: inline;
+    margin-left: 0;
+    margin-bottom: 0;
   }
 
   .gambar img {
