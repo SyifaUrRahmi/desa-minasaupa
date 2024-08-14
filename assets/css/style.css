@@ -393,10 +393,28 @@ footer .credit a {
   padding: 20px;
 }
 
-@media (max-width: 768px) {
+#potensi {
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-#potensi {
+.gallery-item {
+  flex: 1 1 calc(25% - 10px); /* Mengatur 5 gambar sejajar pada layar besar */
+  margin: 5px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#galery {
   margin-left: 10rem;
   margin-right: 10rem;
 }
@@ -414,6 +432,10 @@ footer .credit a {
     font-size: 60%;
   }
 
+  .gallery-item {
+    flex: 1 1 100%; /* Mengatur 1 gambar sejajar pada layar kecil */
+    margin: 5px 0;
+  }
   #potensi {
     margin-left: 5rem;
     margin-right: 5rem;
