@@ -410,12 +410,12 @@ footer .credit a {
 
 .gallery-item img {
   width: 100%;
-  height: 150px;
+  height: auto;
   object-fit: cover;
   display: block;
 }
 
-#galery {
+#gallery {
   margin-left: 10rem;
   margin-right: 10rem;
 }
@@ -442,7 +442,7 @@ footer .credit a {
     margin-right: 5rem;
   }
 
-  #galery {
+  #gallery {
     margin-left: 5rem;
     margin-right: 5rem;
   }
@@ -590,9 +590,9 @@ footer .credit a {
     margin-left: 5rem;
     margin-right: 5rem;
   }
-  .gallery-item img {
+  /* .gallery-item img {
     height: 90%;
-  }
+  } */
 }
 
 .active-button {
@@ -613,9 +613,13 @@ footer .credit a {
     margin-top: -110px;
     display: inline;
   }
-  .gallery-item img {
+  /* .gallery-item {
+    margin: 5px, 5px, 0, 5px;
     height: 80%;
   }
+  .gallery-item img {
+    height: 80%;
+  } */
 
   #sub {
     margin-left: 0;
