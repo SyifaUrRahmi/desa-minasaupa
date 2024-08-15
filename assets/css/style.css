@@ -590,6 +590,9 @@ footer .credit a {
     margin-left: 5rem;
     margin-right: 5rem;
   }
+  .gallery-item img {
+    height: 90%;
+  }
 }
 
 .active-button {
@@ -607,8 +610,11 @@ footer .credit a {
     width: 0;
   }
   .piramid {
-    /* margin-top: -100px; */
+    margin-top: -110px;
     display: inline;
+  }
+  .gallery-item img {
+    height: 80%;
   }
 
   #sub {
@@ -622,7 +628,7 @@ footer .credit a {
   }
 
   .sotk p {
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
   }
 }
 
