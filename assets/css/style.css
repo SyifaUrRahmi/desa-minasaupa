@@ -406,6 +406,7 @@ footer .credit a {
 .gallery-item {
   flex: 1 1 calc(25% - 10px); /* Mengatur 5 gambar sejajar pada layar besar */
   margin: 5px;
+  overflow: hidden;
 }
 
 .gallery-item img {
@@ -413,6 +414,11 @@ footer .credit a {
   height: auto;
   object-fit: cover;
   display: block;
+  transition: transform 0.3s ease; /* Mengatur durasi dan kehalusan transisi */
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1); /* Membesarkan gambar sedikit saat dihover */
 }
 
 #gallery {
