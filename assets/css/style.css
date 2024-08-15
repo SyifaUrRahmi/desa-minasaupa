@@ -410,7 +410,8 @@ footer .credit a {
 
 .gallery-item img {
   width: 100%;
-  height: auto;
+  height: 150px;
+  object-fit: cover;
   display: block;
 }
 
@@ -433,14 +434,18 @@ footer .credit a {
   }
 
   .gallery-item {
-    flex: 1 1 100%; /* Mengatur 1 gambar sejajar pada layar kecil */
-    margin: 5px 0;
+    flex: 1 1 calc(50% - 10px); /* Mengatur 2 gambar sejajar dan memberikan jarak */
+    margin: 5px;
   }
   #potensi {
     margin-left: 5rem;
     margin-right: 5rem;
   }
 
+  #galery {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
   .custom-box {
     flex: 1 1 100%; /* Pada layar kecil, mengambil seluruh lebar container */
   }
@@ -454,7 +459,6 @@ footer .credit a {
     font-weight: bold;
   }
   .carousel-caption h2 {
-    /* width: 80%; */
     font-size: 25px;
     font-weight: bold;
   }
@@ -473,8 +477,7 @@ footer .credit a {
     height: 250px;
   }
   .news-item img {
-    width: 200px; /* Agar gambar sesuai lebar card */
-    /* height: auto; */
+    width: 200px;
     height: 250px;
     object-fit: cover; /* Menjaga gambar tetap berproporsi */
   }
@@ -520,22 +523,15 @@ footer .credit a {
     margin-right: 1rem;
   }
 
-  .timeline:before {
-    /* left: 5%; */
-  }
-
   .timeline-badge {
     width: 40px;
     height: 40px;
     line-height: 40px;
-    /* margin-left: -20px; */
   }
 
   .timeline-panel {
     width: 100%;
     padding: 15px;
-    /* margin-left: 20px; */
-    /* left: 10%; */
   }
 
   .timeline > li:nth-child(even) .timeline-panel {
@@ -573,7 +569,6 @@ footer .credit a {
   }
   #sejarah-desa .container {
     justify-content: center;
-    /* text-align: justify; */
     margin-left: 0 !important;
   }
   ul .timeline {
@@ -595,16 +590,6 @@ footer .credit a {
     margin-left: 5rem;
     margin-right: 5rem;
   }
-
-  /* .peta-lokasi .rows .map {
-    flex: 1 1 45rem;
-    width: 100%;
-    object-fit: cover;
-  }
-  .peta-lokasi .rows .data {
-    flex: 1 1 45rem;
-    padding: 1rem 1rem;
-  } */
 }
 
 .active-button {
@@ -622,7 +607,7 @@ footer .credit a {
     width: 0;
   }
   .piramid {
-    margin-top: -100px;
+    /* margin-top: -100px; */
     display: inline;
   }
 
@@ -637,7 +622,7 @@ footer .credit a {
   }
 
   .sotk p {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
   }
 }
 
